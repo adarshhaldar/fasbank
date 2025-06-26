@@ -1,0 +1,52 @@
+.dashboard-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashboard-card-pill {
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-card-pill h1 {
+    margin-bottom: 0.5rem;
+}
+
+select {
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+select option {
+    background-color: #333;
+    color: white;
+}
+
+.chart-tab {
+    margin: 1rem 0rem;
+    width: 100%;
+}
+
+#myChart{
+    height: 30rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard-row {
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .dashboard-card-pill {
+        width: 100%;
+        margin: 0.5rem 0rem;
+    }
+}

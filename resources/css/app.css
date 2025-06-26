@@ -1,0 +1,234 @@
+@import url('./login.css');
+@import url('./dashboard.css');
+@import url('./services.css');
+@import url('./recent.css');
+@import url('./notification.css');
+@import url('./account.css');
+@import url('./transactions.css');
+@import url('./payment.css');
+@import url('./transfer_request.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s all;
+    scrollbar-width: none;
+}
+
+*-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar for Chrome, Safari, Edge */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.astrik {
+    color: rgb(255, 50, 50);
+    font-weight: bolder;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo img{
+    width: 3rem;
+}
+
+.navbar .menu-toggle {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.nav-links li a:hover {
+    box-shadow: 0 0.2rem 0 0 white;
+}
+
+.nav-links li:first-child a:hover {
+    box-shadow: 0 0 0 0 transparent;
+}
+
+#notification-nav-link{
+    display: block;
+}
+
+#notification-mob-nav-link{
+    display: none;
+}
+
+.active {
+    box-shadow: 0 0.2rem 0 0 white !important;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.login-with-google-btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 0rem;
+    border: 1px solid white;
+    width: 15rem;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    transition: 0.3s all;
+    box-shadow: inset 0 0 0 0 black;
+    border-radius: 10px;
+    margin: 1rem auto 0rem auto;
+}
+
+.login-with-google-btn:hover {
+    box-shadow: inset 15rem 0 1px 0 white;
+    color: black;
+}
+
+.main-content {
+    padding: 2rem 2rem 5rem 2rem;
+}
+
+.main-content h2 {
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.empty-state {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.empty-state img {
+    width: 12rem;
+}
+
+.empty-state p {
+    font-size: 20px;
+}
+
+.del-all-btn {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    transition: 0.3s all;
+    box-shadow: inset 0 0 0 0 black;
+}
+
+.del-all-btn:hover {
+    border-color: rgb(244, 65, 65);
+    box-shadow: inset 7rem 0 1px 0 rgb(244, 65, 65);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mob-toggle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 4rem;
+    }
+
+    #notification-mob-nav-link{
+        display: block;
+    }
+    
+    #notification-nav-link{
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: inherit;
+        flex-direction: column;
+        z-index: 999;
+        padding: 1rem;
+        background-color: #292929;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .login-with-google-btn {
+        width: 80%;
+    }
+}

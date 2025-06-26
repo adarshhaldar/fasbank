@@ -1,0 +1,78 @@
+    .transaction-title {
+        width: 15rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .transaction-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .filter-tab {
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+    }
+
+    .filter-tab-btn button{
+        cursor: pointer;
+        width: 5rem;
+        padding: 0.5rem;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        margin: 0 0.5rem;
+    }
+
+    .filter-tab input,
+    .filter-tab select {
+        padding: 0.5rem;
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .filter-tab select option {
+        background-color: #333;
+        color: white;
+    }
+
+    .custom-date label{
+        margin-top: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+        .transaction-filter {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    .transactions-list {
+        margin-top: 1rem;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+
+    .transaction-paid-status {
+        color: rgb(19, 185, 94);
+    }
+
+    .transaction-pending-status {
+        color: rgb(255, 183, 0);
+    }
+
+    .transaction-credit {
+        color: rgb(19, 185, 94);
+    }
+
+    .transaction-debit {
+        color: rgb(247, 69, 69);
+    }

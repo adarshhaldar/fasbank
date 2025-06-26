@@ -1,0 +1,134 @@
+h2 img {
+    width: 3rem;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+}
+
+#remove-contact-btn{
+    margin-left: 1rem; 
+    border:1px solid white; 
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.payment-history {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.payment-date-group {
+    border-radius: 100rem;
+    width: 15rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 2px solid #a5a5a5;
+    margin: 0 auto 1rem auto;
+}
+
+.user-payment-card {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.to-user-payment-card {
+    justify-content: start;
+}
+
+.from-user-payment-card {
+    justify-content: end;
+}
+
+.payment-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.payment-date-and-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.payment-paid-status i {
+    color: rgb(19, 185, 94);
+}
+
+.payment-pending-status i {
+    color: rgb(255, 183, 0);
+}
+
+.payment-expired-status i {
+    color: rgb(247, 69, 69);
+}
+
+.payment-options {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-options button {
+    padding: 1rem;
+    width: 10rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 black;
+}
+
+.add-contact-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.pay-btn:hover {
+    box-shadow: inset 10rem 0 0 0 rgb(247, 69, 69);
+}
+
+.request-btn:hover {
+    box-shadow: inset -10rem 0 0 0 rgb(38, 198, 144);
+}
+
+.pay-now-btn {
+    margin-top: 0.5rem;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 5rem;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 white;
+}
+
+.pay-now-btn:hover {
+    box-shadow: inset 0 -2rem 0 0 white;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .payment-history {
+        width: 100% !important;
+    }
+
+    .payment-options {
+        flex-direction: column;
+    }
+
+    .payment-options button {
+        width: 8rem;
+    }
+}

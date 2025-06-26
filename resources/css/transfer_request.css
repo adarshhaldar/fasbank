@@ -1,0 +1,47 @@
+.transfer-body, .transfer-request-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.transfer-body form, .transfer-request-body form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.transfer-body form label, .transfer-request-body form label {
+    padding: 0.5rem;
+}
+
+.transfer-body form input, .transfer-request-body form input {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 1rem 0.5rem;
+    color: white;
+    border-radius: 5px;
+    width: 20rem;
+}
+
+.transfer-body form button, .transfer-request-body form button {
+    padding: 0.8rem;
+    width: 20rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    margin-top: 1rem;
+}
+
+.transfer-body button:hover {
+    box-shadow: inset 20rem 0 1px 0 rgb(244, 65, 65);
+    border-color: transparent;
+}
+
+.transfer-request-body button:hover {
+    box-shadow: inset 20rem 0 1px 0 rgb(19, 185, 94);
+    border-color: transparent;
+}

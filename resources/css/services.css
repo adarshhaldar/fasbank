@@ -1,0 +1,53 @@
+  .service-list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .service-card {
+    cursor: pointer;
+    background: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 20rem;
+    margin: 0 1rem 1rem 1rem;
+    color: white;
+    text-decoration: none;
+    box-shadow:  0rem 0rem 0px 0 black;
+  }
+
+  .service-card:hover{
+    box-shadow:  0rem 0.2rem 1px 0 rgb(255, 255, 255);
+  }
+
+  .recent-h3{
+    color: rgb(255, 183, 0);
+  }
+
+  .transactions-h3{
+    color: rgb(127, 197, 255);
+  }
+
+  .contact-h3{
+    color: rgb(236, 85, 250);
+  }
+
+  .request-money-h3{
+    color: rgb(51, 250, 184);
+  }
+
+  .send-money-h3{
+    color: rgb(255, 127, 127);
+  }
+
+  @media (max-width: 768px) {
+    .service-list {
+      flex-wrap: no-wrap;
+      flex-direction: column;
+    }
+
+    .service-card{
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+  }

@@ -1,0 +1,105 @@
+    .profile-card {
+        background: #333;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+
+    .profile-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-img img {
+        display: inline-block;
+        width: 8rem;
+        border-radius: 100%;
+    }
+
+    .profile-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 1rem;
+    }
+
+    .profile-details p {
+        width: 20rem;
+        padding: 1rem 0rem;
+    }
+
+    .profile-card h3 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    .profile-card p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .setting-detail-tab {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .btn-div {
+        padding: 1rem;
+        margin: 0% auto;
+    }
+
+    .btn-div button {
+        padding: 1rem;
+        width: 15rem;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-div button:hover {
+        cursor: pointer;
+    }
+
+    .log-out-btn {
+        border: 1px solid rgb(255, 255, 255) !important;
+        background-color: transparent;
+        color: white;
+        transition: 0.3s all;
+        box-shadow: inset 0 0 0 0 black;
+    }
+
+    .log-out-btn:hover {
+        box-shadow: inset 15rem 0 1px 0 white;
+        color: black;
+    }
+
+    .log-out-all-btn {
+        background-color: rgb(255, 111, 0);
+        color: white;
+        box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+    }
+
+    .log-out-all-btn:hover {
+        box-shadow: inset 15rem 0 1px 0 white;
+        color: black;
+    }
+
+    .delete-account-btn {
+        background-color: rgb(189, 0, 0);
+        color: white;
+        box-shadow: inset 0 0 0 0 rgb(255, 255, 255);
+    }
+
+    .delete-account-btn:hover {
+        box-shadow: inset 15rem 0 1px 0 white;
+        color: black;
+    }
+
+    @media (max-width: 768px) {
+        .profile-details {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
