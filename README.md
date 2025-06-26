@@ -1,6 +1,6 @@
-# Fasbank
+# FasBank
 
-Fasbank is a modern online banking system, built using Laravel (backend) and Vue.js (frontend). It allows users to authenticate via Google, manage contacts through unique bank IDs, send and request money, view transaction history, and access an analytics dashboard — all through a secure, user-friendly interface.
+FasBank is a modern online banking system, built using Laravel (backend) and Vue.js (frontend). It allows users to authenticate via Google, manage contacts through unique bank IDs, send and request money, view transaction history, and access an analytics dashboard — all through a secure, user-friendly interface.
 
 ---
 
@@ -109,4 +109,4 @@ npm run dev
 
 ## Author
 
-Adarsh Haldar 
+Developed by Adarsh Haldar 
